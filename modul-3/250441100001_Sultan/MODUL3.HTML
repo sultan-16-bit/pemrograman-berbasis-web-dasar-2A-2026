@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Portfolio Sultan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-50 text-gray-800 font-sans scroll-smooth">
+
+<nav class="flex justify-center gap-10 py-5 bg-white shadow fixed w-full top-0 z-50">
+  <a href="#home" class="hover:text-blue-500">Home</a>
+  <a href="#about" class="hover:text-blue-500">About</a>
+  <a href="#skills" class="hover:text-blue-500">Skills</a>
+  <a href="#contact" class="hover:text-blue-500">Contact</a>
+</nav>
+
+<div class="h-16"></div>
+
+<section id="home" class="flex flex-col items-center text-center py-20 px-6 scroll-mt-20">
+
+  <img src="fotoalmet.jpeg"
+       class="w-40 h-40 object-cover rounded-full shadow mb-4 border-4 border-blue-400">
+
+  <h1 class="text-3xl font-bold mb-2">Sultan</h1>
+  <p class="text-gray-500 mb-4">Mahasiswa Sistem Informasi</p>
+
+  <a href="#about" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600">
+    Lihat Profil
+  </a>
+
+</section>
+
+<section id="about" class="py-16 px-6 scroll-mt-20">
+
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow text-center">
+    <h2 class="text-2xl font-bold text-blue-500 mb-4">Tentang Saya</h2>
+    <p class="text-gray-600">
+      Saya adalah mahasiswa Sistem Informasi yang sedang belajar pengembangan web
+      menggunakan HTML, CSS, dan TailwindCSS.
+    </p>
+  </div>
+
+</section>
+
+<section id="skills" class="py-16 px-6 scroll-mt-20">
+
+  <h2 class="text-2xl font-bold text-center text-blue-500 mb-8">Skills</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+    <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-md transition">
+      <h3 class="font-bold mb-2">HTML & CSS</h3>
+      <p class="text-sm text-gray-500">Dasar pembuatan website</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-md transition">
+      <h3 class="font-bold mb-2">Networking</h3>
+      <p class="text-sm text-gray-500">Jaringan komputer dasar</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center hover:shadow-md transition">
+      <h3 class="font-bold mb-2">Design</h3>
+      <p class="text-sm text-gray-500">Desain UI sederhana</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contact" class="py-16 px-6 scroll-mt-20">
+
+  <h2 class="text-2xl font-bold text-center text-blue-500 mb-6">Kontak</h2>
+
+  <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow">
+
+    <form class="flex flex-col gap-4">
+      <input type="text" placeholder="Nama" class="p-3 rounded border">
+      <input type="email" placeholder="Email" class="p-3 rounded border">
+      <textarea placeholder="Pesan" class="p-3 rounded border"></textarea>
+      <button class="bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        Kirim
+      </button>
+    </form>
+
+  </div>
+
+</section>
+
+<footer class="text-center  text-gray-500">
+  © 2026 Sultan
+</footer>
+
+</body>
+</html>
