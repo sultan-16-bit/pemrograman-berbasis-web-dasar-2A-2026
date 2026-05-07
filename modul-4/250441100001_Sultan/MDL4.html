@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-white dark:bg-gray-900">
+
+<div class="flex h-full">
+
+  <!-- LEFT -->
+  <div class="w-1/2 bg-blue-500 text-white flex flex-col justify-center px-16">
+    <h1 class="text-4xl font-bold mb-6">
+      Hello Prospective Students
+    </h1>
+
+    <img src="img/gambar_login page.png" class="w-90">
+
+    <p class="mb-6 text-lg">
+      Unlock your professional potential. Learn from industry leaders and stay ahead of the competition.
+    </p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="w-1/2 bg-gray-100 flex items-center justify-center">
+    
+    <div class="bg-white p-8 rounded-lg shadow-md w-80">
+      <h2 class="text-center font-semibold text-lg mb-2">LOGIN PAGE</h2>
+      
+      <p class="text-center text-sm text-gray-500 mb-4">
+        Masukkan Username dan Password Anda
+      </p>
+
+      <!-- EMAIL -->
+      <input id="email" type="email" placeholder="Email Address"
+        class="w-full mb-1 p-2 border rounded">
+      <p id="emailError" class="text-red-500 text-sm mb-2"></p>
+
+      <!-- PASSWORD -->
+      <input id="password" type="password" placeholder="Password"
+        class="w-full mb-1 p-2 border rounded">
+      <p id="passError" class="text-red-500 text-sm mb-3"></p>
+
+      <button id="loginBtn"   class="w-full bg-blue-600 text-white py-2 rounded mb-4">
+        <a href="MDL4.HAL1.html">login</a>
+      </button>
+
+      <p class="text-center text-sm mb-2">Or Login With</p>
+
+      <button class="w-full border py-2 rounded flex items-center justify-center gap-2">
+        <img src="https://img.icons8.com/color/16/google-logo.png">
+        Sign in with Google
+        
+            <button id="toggleTheme" class="border px-3 py-1 rounded">
+      🌙
+    </button>
+  </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- VALIDASI JS -->
+<script>
+const btn = document.getElementById("loginBtn");
+
+btn.addEventListener("click", function(e){
+  e.preventDefault();
+
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+
+  let emailError = document.getElementById("emailError");
+  let passError = document.getElementById("passError");
+
+  emailError.textContent = "";
+  passError.textContent = "";
+
+  let valid = true;
+
+  // VALIDASI EMAIL
+  if(email === ""){
+    emailError.textContent = "Email wajib diisi";
+    valid = false;
+  } else if(!email.includes("@")){
+    emailError.textContent = "Format email tidak valid";
+    valid = false;
+  }
+
+  // VALIDASI PASSWORD
+  if(password === ""){
+    passError.textContent = "Password wajib diisi";
+    valid = false;
+  } else if(password.length < 6){
+    passError.textContent = "Password minimal 6 karakter";
+    valid = false;
+  }
+
+  // JIKA VALID
+  if(valid){
+    alert("Login berhasil!");
+  }
+});
+
+</script>
+
+
+
+
+</body>
+</html>

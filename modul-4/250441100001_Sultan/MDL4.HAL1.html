@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Course</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FIX DARK MODE -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-sm z-50 flex justify-between items-center px-16 py-5">
+  
+  <div class="font-bold text-blue-600"></div>
+
+  <ul class="flex gap-8 text-sm font-medium">
+    <li><a href="#home" class="text-blue-600">HOME</a></li>
+    <li><a href="#courses" class="hover:text-blue-600">COURSES</a></li>
+    <li><a href="#about" class="hover:text-blue-600">THEACHERS</a></li>
+    <li><a href="#" class="hover:text-blue-600">PAGES</a></li>
+    <li><a href="#" class="hover:text-blue-600">BLOG</a></li>
+    <li><a href="#contact" class="hover:text-blue-600">CONTACT</a></li>
+    
+  </ul>
+
+  <div class="flex items-center gap-3">
+    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded">
+      Contact Us
+    </a>
+
+    <!-- TOGGLE -->
+    <button id="toggleTheme" class="border px-3 py-1 rounded">
+      🌙
+    </button>
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+<section id="home" class="pt-32 px-16 bg-gray-200 dark:bg-gray-700 flex justify-between items-center">
+
+  <div>
+    <p class="text-blue-600 text-sm mb-2">E-LEARNING PLATFORM</p>
+
+    <h1 class="text-4xl font-bold mb-4">
+      Online Course Education
+    </h1>
+
+    <p class="text-gray-600 dark:text-gray-300 mb-6">
+      Feels Like Real Classroom
+    </p>
+
+    <div class="flex gap-4">
+      <button class="bg-blue-600 text-white px-5 py-2 rounded">
+        Get Started
+      </button>
+      <button class="bg-orange-400 text-white px-5 py-2 rounded">
+        Get Course
+      </button>
+    </div>
+  </div>
+
+  <img src="img/gambar_orang.png" class="w-[350px]">
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="bg-blue-600 dark:bg-blue-900 text-white">
+
+  <div class="grid grid-cols-2 gap-4">
+    <img src="img/gambar_course.png" class="rounded-lg">
+  </div>
+
+  <div class="max-w-md">
+    <p class="text-sm mb-2">GET TO KNOW ABOUT US</p>
+
+    <h2 class="text-2xl font-bold mb-4">
+      Transform your future with skills that matter.
+    </h2>
+
+    <p class="mb-4 text-sm">
+      Can help you build in-demand skills quickly.
+    </p>
+
+    <button class="bg-orange-400 px-4 py-2 rounded">
+      About More
+    </button>
+  </div>
+
+</section>
+
+
+<!-- FEATURE -->
+<section class="bg-white dark:bg-gray-800 px-16 py-8 flex justify-between text-sm text-gray-600 dark:text-gray-300">
+  <div>20k+ Online Course</div>
+  <div>Lifetime Access</div>
+  <div>Value For Money</div>
+  <div>Lifetime Support</div>
+  <div>Community Support</div>
+  <div>Free Download Course</div>
+</section>
+
+
+<!-- COURSES -->
+<section id="courses" class="px-16 py-20 text-center bg-gray-100 dark:bg-gray-900">
+
+  <h2 class="text-2xl font-bold mb-10">
+    OUR POPULAR COURSE
+  </h2>
+
+  <div class="grid grid-cols-4 gap-6 mb-10">
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">Digital Marketing</div>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">Graphic Design</div>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">UI/UX Design</div>
+    <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">Web Development</div>
+  </div>
+
+  <div class="grid grid-cols-4 gap-6">
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-3">
+      <img src="img/thumbnail-1.png">
+      <h3 class="text-sm mt-2">Learn Figma UI/UX</h3>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-3">
+      <img src="img/thumbnail-2.png">
+      <h3 class="text-sm mt-2">Python Fundamental</h3>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-3">
+      <img src="img/thumbnail-3.png">
+      <h3 class="text-sm mt-2">Digital Marketing</h3>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-3">
+      <img src="img/thumbnail-4.png">
+      <h3 class="text-sm mt-2">Graphic Design</h3>
+    </div>
+
+  </div>
+
+  <button class="mt-8 bg-blue-600 text-white px-6 py-2 rounded">
+    View All Course
+  </button>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-blue-600 text-white px-16 py-10">
+
+  <div class="grid grid-cols-4 gap-10 mb-6">
+
+    <div>
+      <h3 class="font-semibold">
+        Dive Into our Online Courses and Ignite Your Learning
+      </h3>
+    </div>
+
+    <div>
+      <p>About Me</p>
+      <p>Online Course</p>
+      <p>Contact</p>
+    </div>
+
+    <div>
+      <p>Home</p>
+      <p>Teachers</p>
+      <p>Pages</p>
+    </div>
+
+    <div>
+      <p>Privacy</p>
+      <p>Copyright</p>
+    </div>
+
+  </div>
+
+  <p class="text-center text-sm">
+    ©2026 Online Course
+  </p>
+
+</footer>
+
+
+<!-- SCRIPT -->
+<script>
+const btn = document.getElementById("toggleTheme");
+
+// fungsi apply theme
+function applyTheme(theme){
+  if(theme === "dark"){
+    document.documentElement.classList.add("dark");
+    btn.textContent = "☀️";
+  } else {
+    document.documentElement.classList.remove("dark");
+    btn.textContent = "🌙";
+  }
+}
+
+// load awal
+let savedTheme = localStorage.getItem("theme") || "light";
+applyTheme(savedTheme);
+
+// klik tombol
+btn.addEventListener("click", () => {
+  let current = document.documentElement.classList.contains("dark") ? "dark" : "light";
+  let newTheme = current === "dark" ? "light" : "dark";
+
+  localStorage.setItem("theme", newTheme);
+  applyTheme(newTheme);
+});
+</script>
+
+</body>
+</html>
